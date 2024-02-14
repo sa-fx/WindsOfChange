@@ -26,4 +26,5 @@ jobs:
             libraries: |
               - name: SD
               - name: OneWire
+              - name: WindsOfChange
   
