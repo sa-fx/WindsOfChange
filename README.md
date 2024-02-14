@@ -8,7 +8,7 @@ This library is designed to interface with the Winds of Change wind turbines for
 
 ### Contribution
 To add an additional sensor:
-- Create a new pair of .cpp/.h files with your sensor's name (eg `sensor_name.cpp`, `sensor_name.h`) in `src`, following the style of 
+- Create a new pair of `.cpp/.h` files with your sensor's name (eg `sensor_name.cpp`, `sensor_name.h`) in `src`, following the style of previously implemented sensors
 - Implement the driver code required for your sensor
 - Add `#include "sensor_name.h"` to `WindsOfChange.h`
 
