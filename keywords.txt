@@ -1,0 +1,13 @@
+# Datarypes (KEYWORD1)
+Altimeter       KEYWORD1
+Anemometer      KEYWORD1
+Humidity        KEYWORD1
+Precipitation   KEYWORD1
+StrainGauge     KEYWORD1
+Temperature     KEYWORD1
+
+# Methods and Functions (KEYWORD2)
+read            KEYWORD2
+readAnalog      KEYWORD2
+readDigital     KEYWORD2
+log             KEYWORD2
