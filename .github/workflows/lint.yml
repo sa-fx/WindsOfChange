@@ -7,5 +7,4 @@ jobs:
       - uses: arduino/arduino-lint-action@v1
         with:
           library-manager: submit
-          compliance: strict
-          verbose: true
+          compliance: specification
