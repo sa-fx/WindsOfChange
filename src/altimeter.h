@@ -7,16 +7,30 @@
 
 class Altimeter {
  public:
-  Altimeter();
+  // Default device address: 0x76
+  Altimeter(byte device_address = 0x76);
 
-  /**
-   * @brief Read the current height of the sensor
-   * @returns Float representing height in centimetres
-   */
-  float read();
+  // TODOlater - Implement readTemperature();
+  // TODOlater - Implement readPressure();
 
  private:
-  const byte kAltimeterDeviceAddress = 0x76;
+  /**
+   * Read value from the ADC
+   * @param command   Hex value of command
+   * @returns Value stored in device register
+   */
+  unsigned long readADC(byte command);
+
+  /**
+   * Read coefficient values from PROM
+   * @param index   Index of coefficient to be read
+   * @returns Coefficient at index
+   */
+  byte readPROM(byte index);
+
+  // TODOLater - Implement crc4();
+  // TODOLater - Implement conversion function
+
   const byte kAltimeterCommandReset = 0x1E;    // ADC reset command
   const byte kAltimeterCommandAdcRead = 0x00;  // ADC read command
   const byte kAltimeterCommandAdcConv = 0x40;  // ADC conversion command
@@ -29,6 +43,7 @@ class Altimeter {
   const byte kAltimeterCommandAdc4096 = 0x08;  // ADC OSR=4096
   const byte kAltimeterCommandPromRd = 0xA0;   // PROM read command
 
+  byte device_address_;
   byte calibrationCoefficient[8];
 };
 
