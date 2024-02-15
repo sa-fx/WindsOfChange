@@ -2,12 +2,10 @@
  * strainGauge.ino
  * Example implementing reading from a strain gauge
  * Author: S Alexander
- * Last Updated: 14/02/2024
+ * Last Updated: 15/02/2024
  */
 
 #include <WindsOfChange.h>
-
-using namespace WindsOfChange;
 
 // Strain gauge connected to pin 13
 const int strain_pin = 13;

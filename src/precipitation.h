@@ -1,8 +1,7 @@
-#pragma once
+#ifndef _PRECIPITATION_H_
+#define _PRECIPITATION_H_
 
 #include "WindsOfChange.h"
-
-namespace WindsOfChange {
 
 const int kDigitalDisconnected = 999;
 
@@ -30,4 +29,4 @@ class Precipitation {
   int pin_digital_;
 };
 
-}  // namespace WindsOfChange
+#endif

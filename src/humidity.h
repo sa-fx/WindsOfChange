@@ -1,8 +1,8 @@
-#pragma once
+#ifndef _HUMIDITY_H_
+#define _HUMIDITY_H_
 
 #include "WindsOfChange.h"
 
-namespace WindsOfChange {
 class Humidity {
  public:
   Humidity(int pin);
@@ -18,4 +18,4 @@ class Humidity {
   int pin_;
 };
 
-}  // namespace WindsOfChange
+#endif

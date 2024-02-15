@@ -1,9 +1,9 @@
-#pragma once
+#ifndef _ALTIMETER_H_
+#define _ALTIMETER_H_
 
 #include "IntersemaBaro.h"
 #include "WindsOfChange.h"
 
-namespace WindsOfChange {
 class Altimeter {
  public:
   Altimeter();
@@ -18,4 +18,4 @@ class Altimeter {
   Intersema::BaroPressure_MS5607B *sensor;
 };
 
-}  // namespace WindsOfChange
+#endif

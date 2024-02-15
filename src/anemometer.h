@@ -1,8 +1,8 @@
-#pragma once
+#ifndef _ANEMOMETER_H_
+#define _ANEMOMETER_H_
 
 #include "WindsOfChange.h"
 
-namespace WindsOfChange {
 class Anemometer {
  public:
   Anemometer(int pin);
@@ -17,4 +17,5 @@ class Anemometer {
  private:
   int pin_;
 };
-}  // namespace WindsOfChange
+
+#endif
