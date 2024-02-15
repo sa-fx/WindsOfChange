@@ -1,6 +1,5 @@
 #include "temperature.h"
 
-namespace WindsOfChange {
 Temperature::Temperature(int pin) : pin_(pin) {
   wire = new OneWire(pin_);
   // TODOLater - Add debug log to confirm creation
@@ -49,4 +48,3 @@ float Temperature::read() {
 
   return TemperatureSum;
 };
-}  // namespace WindsOfChange

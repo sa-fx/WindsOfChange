@@ -1,4 +1,5 @@
-#pragma once
+#ifndef _WINDSOFCHANGE_H_
+#define _WINDSOFCHANGE_H_
 
 #include <SD.h>
 #include <SPI.h>
@@ -20,3 +21,5 @@ namespace WindsOfChange {
 void log(String message);
 
 }  // namespace WindsOfChange
+
+#endif

@@ -1,8 +1,8 @@
-#pragma once
+#ifndef _STRAIN_GAUGE_H_
+#define _STRAIN_GAUGE_H_
 
 #include "WindsOfChange.h"
 
-namespace WindsOfChange {
 class StrainGauge {
  public:
   StrainGauge(int pin);
@@ -18,4 +18,4 @@ class StrainGauge {
   int pin_;
 };
 
-}  // namespace WindsOfChange
+#endif

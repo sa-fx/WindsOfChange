@@ -1,6 +1,5 @@
 #include "anemometer.h"
 
-namespace WindsOfChange {
 Anemometer::Anemometer(int pin) : pin_(pin) {}
 
 // Source: https://forum.arduino.cc/t/reading-a-pwm-signal/603967/5
@@ -19,4 +18,3 @@ int Anemometer::read() {
   return (100 * highTime) /
          (highTime + lowTime);  // highTime as percentage of total cycle time
 }
-}  // namespace WindsOfChange

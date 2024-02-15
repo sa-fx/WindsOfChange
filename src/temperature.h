@@ -1,10 +1,9 @@
-#pragma once
+#ifndef _TEMPERATURE_H_
+#define _TEMPERATURE_H_
 
 #include <OneWire.h>
 
 #include "WindsOfChange.h"
-
-namespace WindsOfChange {
 
 // Part number: DS18S20
 class Temperature {
@@ -22,4 +21,5 @@ class Temperature {
   OneWire *wire;
   // TODOLater - Add constants for registers from datasheet
 };
-}  // namespace WindsOfChange
+
+#endif

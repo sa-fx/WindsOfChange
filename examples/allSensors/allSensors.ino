@@ -2,12 +2,10 @@
  * allSensors.ino
  * Example showing all sensors implemented in current revision in a single file
  * Author: S Alexander
- * Last Updated: 14/02/2024
+ * Last Updated: 15/02/2024
  */
 
 #include <WindsOfChange.h>
-
-using namespace WindsOfChange;
 
 // Analogue pins connected to analogue read sensors
 const int PIN_SD_CHIP_SELECT = 4;
@@ -42,5 +40,5 @@ void setup() {
 void loop() {
   float result = temperature.read();
   String message = String(result);
-  log(message);
+  WindsOfChange::log(message);
 }
