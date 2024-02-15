@@ -1,7 +1,6 @@
 #ifndef _ALTIMETER_H_
 #define _ALTIMETER_H_
 
-#include "IntersemaBaro.h"
 #include "WindsOfChange.h"
 
 class Altimeter {
@@ -15,7 +14,6 @@ class Altimeter {
   float read();
 
  private:
-  Intersema::BaroPressure_MS5607B *sensor;
 };
 
 #endif

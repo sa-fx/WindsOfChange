@@ -1,9 +1,5 @@
 #include "altimeter.h"
 
-Altimeter::Altimeter() {
-  sensor = new Intersema::BaroPressure_MS5607B();
-  sensor->init();
-}
+Altimeter::Altimeter() {}
 
-// TODOLater - Confirm if this is what we want the sensor to read
-float Altimeter::read() { return sensor->getHeightCentiMeters(); };
+float Altimeter::read() { return 0.0; };
