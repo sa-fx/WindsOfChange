@@ -76,7 +76,6 @@ jobs:
             - source-path: ./
             # Additional library dependencies
             - name: SD
-            - name: AudioZero
           sketch-paths: |
             - examples
           enable-deltas-report: true
