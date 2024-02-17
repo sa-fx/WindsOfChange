@@ -75,7 +75,7 @@ jobs:
             # Install the library from the local path.
             - source-path: ./
             # Additional library dependencies
-            # - name: SD
+            - name: SD
             - name: AudioZero
           sketch-paths: |
             - examples
