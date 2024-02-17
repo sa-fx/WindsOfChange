@@ -76,7 +76,7 @@ jobs:
             - source-path: ./
             # Additional library dependencies
             - name: SD
-            - name: SPI
+            - name: Wire
           sketch-paths: |
             - examples
           enable-deltas-report: true
