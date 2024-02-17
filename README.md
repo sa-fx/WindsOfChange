@@ -1,5 +1,8 @@
 # Winds of Change
 
+![Compile Examples](https://github.com/sa-fx/WindsOfChange/actions/workflows/compile-examples.yml/badge.svg)
+![Arduino Lint](https://github.com/sa-fx/WindsOfChange/actions/workflows/lint.yml/badge.svg)
+
 This library is designed to interface with the Winds of Change wind turbines for monitoring and control.
 
 ### Dependencies
