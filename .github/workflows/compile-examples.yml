@@ -74,8 +74,9 @@ jobs:
           libraries: |
             # Install the library from the local path.
             - source-path: ./
-            # Additional library dependencies can be listed here.
-            # See: https://github.com/arduino/compile-sketches#libraries
+            # Additional library dependencies
+            - name: SD
+            - name: SPI
           sketch-paths: |
             - examples
           enable-deltas-report: true
