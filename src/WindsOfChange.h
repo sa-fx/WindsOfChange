@@ -1,6 +1,7 @@
 #ifndef _WINDSOFCHANGE_H_
 #define _WINDSOFCHANGE_H_
 
+#include <ModbusMaster.h>
 #include <SD.h>
 #include <SPI.h>
 
@@ -8,6 +9,7 @@
 #include "altimeter.h"
 #include "anemometer.h"
 #include "humidity.h"
+#include "power_meter.h"
 #include "precipitation.h"
 #include "strain_gauge.h"
 #include "temperature.h"
