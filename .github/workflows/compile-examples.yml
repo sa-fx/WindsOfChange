@@ -51,6 +51,7 @@ jobs:
             - name: SD
             - name: OneWire
               version: 2.3.0
+            - name: ModbusMaster
           sketch-paths: |
             - examples
           enable-deltas-report: true
