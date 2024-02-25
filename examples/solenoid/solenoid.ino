@@ -18,8 +18,12 @@ void setup() {
 }
 
 void loop() {
-  solenoid.extend();
-  delay(2000);
-  solenoid.retract();
+  if (solenoid.getSolenoidStatus()) {
+    solenoid.retract();
+    Serial.println("Solenoid retracted");
+  } else {
+    solenoid.extend();
+    Serial.println("Solenoid extended");
+  }
   delay(2000);
 }

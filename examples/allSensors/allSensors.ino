@@ -2,7 +2,7 @@
  * allSensors.ino
  * Example showing all sensors implemented in current revision in a single file
  * Author: S Alexander
- * Last Updated: 15/02/2024
+ * Last Updated: 25/02/2024
  */
 
 #include <WindsOfChange.h>
@@ -14,6 +14,7 @@ const int PIN_STRAIN_GAUGE = A0;
 const int PIN_HUMIDITY = A1;
 const int PIN_PRECIPITATION = A2;
 const int PIN_ANEMOMETER = 6;
+const int PIN_SOLENOID = 7;
 
 Altimeter altimeter();
 Anemometer anemometer(PIN_ANEMOMETER);
@@ -21,6 +22,7 @@ Humidity humidity(PIN_HUMIDITY);
 Precipitation precipitation(PIN_PRECIPITATION);
 StrainGauge strain_gauge(PIN_STRAIN_GAUGE);
 Temperature temperature(PIN_TEMPERATURE);
+Solenoid solenoid(PIN_SOLENOID);
 
 void setup() {
   Serial.begin(9600);
@@ -35,6 +37,7 @@ void setup() {
   pinMode(PIN_STRAIN_GAUGE, INPUT);
   pinMode(PIN_HUMIDITY, INPUT);
   pinMode(PIN_PRECIPITATION, INPUT);
+  pinMode(PIN_SOLENOID, OUTPUT);
 }
 
 void loop() {

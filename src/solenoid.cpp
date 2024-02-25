@@ -20,3 +20,5 @@ void Solenoid::retract() {
     plunger_state_ = kRetracted;
   }
 }
+
+bool Solenoid::getSolenoidStatus() { return (bool)plunger_state_; }

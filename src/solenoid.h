@@ -23,6 +23,12 @@ class Solenoid {
    */
   void retract();
 
+  /**
+   * @brief Determine if the solenoid is extended or retracted
+   * @returns True if extended; false if retracted
+   */
+  bool getSolenoidStatus();
+
  private:
   int pin_;
   SolenoidState plunger_state_;
