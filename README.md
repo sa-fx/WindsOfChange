@@ -7,7 +7,7 @@ This library is designed to interface with the Winds of Change wind turbines for
 
 ### Dependencies
 - [SD](https://github.com/arduino-libraries/SD)
-- [OneWire](https://github.com/PaulStoffregen/OneWire) 
+- [OneWire: v2.3.0](https://github.com/PaulStoffregen/OneWire) 
 
 ### Contribution
 To add an additional sensor:
