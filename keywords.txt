@@ -1,13 +1,35 @@
-# Datarypes (KEYWORD1)
+# Datatypes (KEYWORD1)
 Altimeter       KEYWORD1
 Anemometer      KEYWORD1
 Humidity        KEYWORD1
 Precipitation   KEYWORD1
 StrainGauge     KEYWORD1
 Temperature     KEYWORD1
+PowerMeter      KEYWORD1
 
 # Methods and Functions (KEYWORD2)
-read            KEYWORD2
-readAnalog      KEYWORD2
-readDigital     KEYWORD2
-log             KEYWORD2
+read                KEYWORD2
+readAnalog          KEYWORD2
+readDigital         KEYWORD2
+log                 KEYWORD2
+getVoltage          KEYWORD2
+getCurrent          KEYWORD2
+getPower            KEYWORD2
+getEnergy           KEYWORD2
+getFrequency        KEYWORD2
+getPowerFactor      KEYWORD2
+getAlarmStatus      KEYWORD2
+preTransmission     KEYWORD2
+postTransmission    KEYWORD2
+
+# Constants (LITERAL1)
+kRegisterVoltage        LITERAL1
+kRegisterCurrentLo      LITERAL1
+kRegisterCurrentHi      LITERAL1
+kRegisterPowerLo        LITERAL1
+kRegisterPowerHi        LITERAL1
+kRegisterEnergyLo       LITERAL1
+kRegisterEnergyHi       LITERAL1
+kRegisterFrequency      LITERAL1
+kRegisterPowerFactor    LITERAL1
+kRegisterAlarmStatus    LITERAL1
