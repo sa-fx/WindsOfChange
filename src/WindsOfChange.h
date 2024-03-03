@@ -9,6 +9,7 @@
 #include "anemometer.h"
 #include "humidity.h"
 #include "precipitation.h"
+#include "solenoid.h"
 #include "strain_gauge.h"
 #include "temperature.h"
 
