@@ -1,6 +1,8 @@
 #ifndef __SOLENOID_H__
 #define __SOLENOID_H__
 
+#include "WindsOfChange.h"
+
 /**
  * Possible positions of the solenoid plunger
  */

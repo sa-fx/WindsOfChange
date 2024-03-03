@@ -18,7 +18,7 @@ void Solenoid::extend() {
 
 void Solenoid::retract() {
   if (plunger_state_ != kRetracted) {
-    // TODOLater - implement actuating solenoid
+    analogWrite(pin_, 0);
     plunger_state_ = kRetracted;
   }
 }
