@@ -12,6 +12,12 @@ class Solenoid {
   ~Solenoid();
 
   /**
+   * @brief Set the duty cycle to extend the solenoid
+   * @param duty_cycle The new duty cycle
+   */
+  void setDutyCycle(int duty_cycle);
+
+  /**
    * @brief Extend the solenoid's plunger
    * @note If the plunger is already extended, this method will have no effect
    */
@@ -31,7 +37,9 @@ class Solenoid {
 
  private:
   int pin_;
-  SolenoidState plunger_state_;
+  // Default 50% duty cycle
+  int duty_cycle_ = 128;
+  SolenoidState plunger_state_ = kRetracted;
 };
 
 #endif

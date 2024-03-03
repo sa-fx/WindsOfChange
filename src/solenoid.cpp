@@ -7,9 +7,11 @@ Solenoid::~Solenoid() {
   retract();
 }
 
+void Solenoid::setDutyCycle(int duty_cycle) { duty_cycle_ = duty_cycle; }
+
 void Solenoid::extend() {
   if (plunger_state_ != kExtended) {
-    // TODOLater - implement actuating solenoid
+    analogWrite(pin_, duty_cycle_);
     plunger_state_ = kExtended;
   }
 }
