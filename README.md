@@ -1,10 +1,13 @@
 # Winds of Change
 
+![Compile Examples](https://github.com/sa-fx/WindsOfChange/actions/workflows/compile-examples.yml/badge.svg)
+![Arduino Lint](https://github.com/sa-fx/WindsOfChange/actions/workflows/lint.yml/badge.svg)
+
 This library is designed to interface with the Winds of Change wind turbines for monitoring and control.
 
 ### Dependencies
 - [SD](https://github.com/arduino-libraries/SD)
-- [OneWire](https://github.com/PaulStoffregen/OneWire) 
+- [OneWire: v2.3.0](https://github.com/PaulStoffregen/OneWire) 
 
 ### Contribution
 To add an additional sensor:

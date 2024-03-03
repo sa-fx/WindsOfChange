@@ -1,10 +1,24 @@
-on: [push, pull_request]
+name: Lint
+
+on:
+  push:
+  pull_request:
+  schedule:
+    # Run every Tuesday at 8 AM UTC to catch breakage caused by new rules added to Arduino Lint.
+    - cron: "0 8 * * TUE"
+  workflow_dispatch:
+  repository_dispatch:
+
 jobs:
   lint:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
-      - uses: arduino/arduino-lint-action@v1
+      - name: Checkout repository
+        uses: actions/checkout@v4
+      
+      - name: Arduino Lint
+        uses: arduino/arduino-lint-action@v1
         with:
+          project-type: library
           library-manager: submit
           compliance: specification
